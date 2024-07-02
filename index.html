@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <title>GROCEYISH</title>
+</head>
+<body>
+    <main id="home">
+        <header>
+            <section class="wrapper">
+                <section class="top">
+                    <div class="left-container">
+                        <h1 class="left">
+                            <img src="images/main-logo.svg" alt="logo-main">
+                        </h1>
+                        <span>
+                            <h4 class="green">Groceyish</h4>
+                            <h5>GROCERY</h5>
+                        </span>
+                    </div>
+        
+                    <div class="form-main">   
+                        <div id="drop-text" class="form-container">   
+                            <div class="dropdown">
+                                <a href="#" class="button" id="span" data-id="All">All Categories </a>
+                                <span class="arrow"><img src="images/arrow-down.svg" alt="arrow"></span>
+                                <div id="list" class="content">
+                                  <a href="#" class="dropdown-list-item" data-id="All">All Categories</a>
+                                  <a href="#" class="dropdown-list-item" data-id="Vegetables">Vegetables</a>
+                                  <a href="#" class="dropdown-list-item" data-id="Fruits">Fruits</a>
+                                  <a href="#" class="dropdown-list-item" data-id="Leaves">Leaves</a>
+                                </div>
+                            </div>
+                            <div class="form-item-2">    
+                                <img src="images/bar-line.svg" alt="bar">
+                            </div>
+                        
+                            <div class="form-item-3">     
+                                <input type="text" data-search id="search-input" placeholder="Search for items..." onkeyup="">
+                                <span class="search-button"><img src="images/search.svg" alt="Button Icon"></span>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="right-container">
+                        <ul>
+                            <li>
+                                <a href="#">
+                                    <div class="img">
+                                        <img src="images/wishlist.svg" alt="heart">
+                                    </div>
+                                    <h6>Wishlist</h6>
+                                </a>   
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div class="img">
+                                        <img src="images/cart.svg" alt="cart">
+                                    </div>
+                                    <span>
+                                        <h6>My cart</h6>
+                                        <h6 class="green">$21</h6>
+                                    </span>
+                                   <span class="arrow">
+                                    <img src="images/arrow-down.svg" alt="arrow-down">
+                                   </span>
+                                </a>
+                            </li>
+                            <li>
+                               <a href="#">
+                                    <div class="img">
+                                        <img src="images/manager.svg" alt="cart">
+                                    </div>
+                                    <h6>Ramzi Cherif</h6> 
+                                    <span class="arrow">
+                                        <img src="images/arrow-down.svg" alt="arrow-down">
+                                    </span> 
+                               </a>  
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+
+                <section class="bottom">
+                    <div class="left">
+                       <a href="#">
+                            <span class="img-grid">
+                                <img src="images/grid.svg" alt="grid">
+                            </span>
+                            <h5>Brows All Categories</h5>
+                       </a>
+                    </div>
+                    <nav class="middle">
+                        <input type="checkbox" id="click">
+                            <label for="click" class="menu-btn">
+                                <i class="fas fa-bars"></i>
+                            </label>
+                        <ul class="menu">
+                            <li>
+                               <a href="#">
+                                    <img src="images/home.svg" alt="home">
+                                    <h5 class="green">Home</h5>
+                               </a>
+                            </li>
+                            <li>
+                               <a href="#">
+                                    <img src="images/hot.svg" alt="hot">
+                                    <h5>Promotions</h5>
+                               </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="images/percent.svg" alt="%">
+                                    <h5>Promotions</h5>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="images/megaphone.svg" alt="m-phone">
+                                    <h5>Products</h5>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="images/Call.svg" alt="Call">
+                                </a>
+                                <h5 class="green">1233-7777</h5>
+                                <h6>24/7 support center</h6>
+                            </li>
+                        </ul>
+                    </nav>
+                </section>
+            </section>
+        </header>
+
+        <section class="spotlight">
+            <section class="wrapper">
+                <h1>All Products</h1>
+            <ul class="cards" id="product-list">
+                <!-- Categories will be dynamically inserted here -->
+            </ul>
+            </section>
+        </section>
+    </main>
+    <script src="index.js"></script>
+</body>
+</html>
